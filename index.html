@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vylo — Dopamine meets discipline.</title>
+    <meta name="description" content="Your adaptive habit system. Finally, a routine that flows with your energy — not against it. Join the waitlist for Vylo.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vylohub.com/">
+    <meta property="og:title" content="Vylo — Dopamine meets discipline.">
+    <meta property="og:description" content="Your adaptive habit system. Finally, a routine that flows with your energy — not against it.">
+    <meta property="og:image" content="https://vylohub.com/assets/og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vylohub.com/">
+    <meta property="twitter:title" content="Vylo — Dopamine meets discipline.">
+    <meta property="twitter:description" content="Your adaptive habit system. Finally, a routine that flows with your energy — not against it.">
+    <meta property="twitter:image" content="https://vylohub.com/assets/og.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Preload Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Plausible Analytics (commented) -->
+    <!-- <script defer data-domain="vylohub.com" src="https://plausible.io/js/script.js"></script> -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'vylo-purple': '#8A4FFF',
+                        'vylo-blue': '#3BCBFF',
+                        'vylo-aqua': '#3CFFBC',
+                        'vylo-yellow': '#FFD93D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gradient-to-br from-vylo-purple via-vylo-blue to-vylo-aqua min-h-screen">
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center px-4 py-8 overflow-hidden">
+        <!-- Decorative orbs -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-yellow-300/20 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute top-1/2 right-1/4 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-72 h-72 bg-vylo-purple/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        </div>
+        
+        <div class="relative z-10 text-center max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-2 tracking-tight">Vylo</h1>
+            <p class="text-xl md:text-2xl font-semibold text-white/90 mb-12">Dopamine meets discipline.</p>
+            
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Your adaptive habit system.</h2>
+                <p class="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">Finally, a routine that flows with your energy — not against it.</p>
+            </div>
+            
+            <form class="waitlist-form max-w-lg mx-auto" action="https://formspree.io/f/xjkawlqd" method="POST">
+                <input type="hidden" name="_subject" value="Vylo Waitlist">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required 
+                        aria-label="Email address for waitlist"
+                        class="flex-1 px-6 py-4 text-lg bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-full text-white placeholder-white/70 focus:border-vylo-yellow focus:bg-white/15 focus:outline-none focus:ring-4 focus:ring-vylo-yellow/30 transition-all"
+                    >
+                    <button 
+                        type="submit" 
+                        class="px-8 py-4 bg-vylo-yellow text-black font-semibold text-lg rounded-full hover:shadow-2xl hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-vylo-yellow/50 transition-all shadow-lg"
+                    >
+                        Join the waitlist
+                    </button>
+                </div>
+                <p class="text-white/80 text-sm mt-4">We'll confirm by email.</p>
+            </form>
+        </div>
+    </header>
+    
+    <!-- How it works section -->
+    <section class="py-24 bg-gray-50" aria-labelledby="how-it-works-heading">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 id="how-it-works-heading" class="text-4xl md:text-5xl font-black text-gray-900 text-center mb-16">How it works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <div class="text-5xl mb-6">😊</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Log your mood</h3>
+                    <p class="text-lg text-gray-600">Start each day by checking in with how you're feeling</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <div class="text-5xl mb-6">🎯</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Get 3 adaptive habits</h3>
+                    <p class="text-lg text-gray-600">Receive personalized habits that match your current energy</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <div class="text-5xl mb-6">✨</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Stay consistent without guilt</h3>
+                    <p class="text-lg text-gray-600">Build lasting habits that adapt to your life, not the other way around</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Vylo section -->
+    <section class="py-24 bg-gradient-to-br from-vylo-purple via-vylo-blue to-vylo-aqua" aria-labelledby="why-vylo-heading">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 id="why-vylo-heading" class="text-4xl md:text-5xl font-black text-white text-center mb-16">Why Vylo?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8">
+                    <div class="text-5xl mb-6">⚡</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Adaptive to your energy</h3>
+                    <p class="text-lg text-white/90">Habits that flex with your daily energy levels, not rigid schedules that break you down.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="text-5xl mb-6">💚</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Guilt-free consistency</h3>
+                    <p class="text-lg text-white/90">Build lasting habits without the shame spiral when life gets in the way.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="text-5xl mb-6">🎉</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Joyful micro-wins</h3>
+                    <p class="text-lg text-white/90">Celebrate small victories that compound into meaningful change over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials section -->
+    <section class="py-24 bg-gray-50" aria-labelledby="testimonials-heading">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 id="testimonials-heading" class="text-4xl md:text-5xl font-black text-gray-900 text-center mb-16">What early users say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <p class="text-lg text-gray-900 mb-6 italic">"Finally, a habit tracker that doesn't make me feel guilty when I'm having a low-energy day."</p>
+                    <div class="flex flex-col">
+                        <strong class="text-gray-900 font-semibold">Sarah M.</strong>
+                        <span class="text-gray-500 text-sm">Early Beta User</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <p class="text-lg text-gray-900 mb-6 italic">"The adaptive suggestions actually work with my ADHD instead of against it. Game changer."</p>
+                    <div class="flex flex-col">
+                        <strong class="text-gray-900 font-semibold">Alex K.</strong>
+                        <span class="text-gray-500 text-sm">Early Beta User</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border border-gray-100">
+                    <p class="text-lg text-gray-900 mb-6 italic">"I've never stuck to habits this long. The micro-wins keep me motivated every single day."</p>
+                    <div class="flex flex-col">
+                        <strong class="text-gray-900 font-semibold">Jordan L.</strong>
+                        <span class="text-gray-500 text-sm">Early Beta User</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col items-center gap-8 text-center">
+                <p class="text-gray-300">&copy; <span id="current-year">2024</span> VyloHub</p>
+                <p class="text-gray-400 text-sm">
+                    We use <a href="https://plausible.io" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">privacy-friendly analytics</a>
+                </p>
+                <div class="flex flex-wrap gap-6 justify-center">
+                    <a href="https://instagram.com/vylohub" target="_blank" rel="noopener noreferrer" aria-label="Follow VyloHub on Instagram" class="text-gray-300 hover:text-white transition-colors px-4 py-2 rounded-lg hover:bg-white/10">
+                        Instagram
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow VyloHub on TikTok" class="text-gray-300 hover:text-white transition-colors px-4 py-2 rounded-lg hover:bg-white/10">
+                        TikTok
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow VyloHub on X (Twitter)" class="text-gray-300 hover:text-white transition-colors px-4 py-2 rounded-lg hover:bg-white/10">
+                        X
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Connect with VyloHub on LinkedIn" class="text-gray-300 hover:text-white transition-colors px-4 py-2 rounded-lg hover:bg-white/10">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Inline JavaScript -->
+    <script>
+        // DOM Ready utility
+        function domReady(fn) {
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', fn);
+            } else {
+                fn();
+            }
+        }
+        
+        // Initialize current year in footer
+        function initCurrentYear() {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        }
+        
+        // Initialize everything when DOM is ready
+        domReady(() => {
+            initCurrentYear();
+            console.log('Vylo landing page initialized');
+        });
+    </script>
+</body>
+</html>
